@@ -41,7 +41,7 @@ export default function Home() {
             <FormButton
               name="toggle-like"
               text={state.isLiked ? "Unlike" : "Like"}
-              className="bg-blue-400 text-white"
+              className="bg-blue-500 text-white"
             />
           </form>
         </div>

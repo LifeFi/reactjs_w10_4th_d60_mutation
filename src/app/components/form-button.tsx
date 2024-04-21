@@ -18,8 +18,7 @@ export default function FormButton({
       name={name}
       disabled={pending}
       {...rest}
-      className={`${rest.className}
-        bg-gray-100 text-black disabled:bg-gray-400  disabled:text-white disabled:cursor-not-allowed w-72 p-3 rounded-md my-3 mx-1.5`}
+      className={`bg-gray-100 text-black disabled:bg-gray-400  disabled:text-white disabled:cursor-not-allowed w-72 p-3 rounded-md my-3 mx-1.5 ${rest.className}`}
     >
       {pending ? "로딩 중" : text}
     </button>
