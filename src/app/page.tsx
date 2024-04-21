@@ -34,14 +34,14 @@ export default function Home() {
           ) : null}
         </div>
         <div className="flex">
-          <form action={dispatch} className="flex justify-center">
+          <form action={dispatch}>
             <FormButton name="new-dog" text="New Dog!" />
           </form>
-          <form action={dispatch} className="flex justify-center">
+          <form action={dispatch}>
             <FormButton
               name="toggle-like"
               text={state.isLiked ? "Unlike" : "Like"}
-              className="bg-[#008DC4] text-white"
+              className="bg-blue-400 text-white"
             />
           </form>
         </div>
