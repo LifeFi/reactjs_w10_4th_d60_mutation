@@ -33,14 +33,18 @@ export default function Home() {
             ></video>
           ) : null}
         </div>
-        <form action={dispatch} className="flex justify-center">
-          <FormButton name="new-dog" text="New Dog!" />
-          <FormButton
-            name="toggle-like"
-            text={state.isLiked ? "Unlike" : "Like"}
-            className="bg-[#008DC4] text-white"
-          />
-        </form>
+        <div className="flex">
+          <form action={dispatch} className="flex justify-center">
+            <FormButton name="new-dog" text="New Dog!" />
+          </form>
+          <form action={dispatch} className="flex justify-center">
+            <FormButton
+              name="toggle-like"
+              text={state.isLiked ? "Unlike" : "Like"}
+              className="bg-[#008DC4] text-white"
+            />
+          </form>
+        </div>
       </div>
     </div>
   );
